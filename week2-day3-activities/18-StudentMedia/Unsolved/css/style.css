@@ -1,5 +1,5 @@
 /**
- * Media Query Demo (note the commented rules)
+ * Media Query Style Exercise: Solved;
  **/
 
 * {
@@ -26,25 +26,21 @@ body {
 .wrapper {
   /* Box-model */
   width: 1024px;
-  padding: 50px;
 
   /* Positioning */
   margin: 40px auto;
-  padding: 30px;
 }
 
 #main-content,
 #sidebar {
   /* Box-model */
   width: 500px;
-  padding: 50px;
-  margin: 40px auto;
+  padding: 30px;
 }
 
 #main-content {
   /* Positioning */
   float: left;
-  padding: 50px;
 
   /* Visual */
   background: #fff;
@@ -58,18 +54,69 @@ body {
   background: #eee;
 }
 
-/*
-  These rules take effect when the browser's width
-  is either 768px or less.
-*/
 @media screen and (max-width: 768px) {
-  /* The body's bg color will be #333 */
   body {
     background-color: #333;
   }
 
-  /* The wrapper's width will be 600px */
   .wrapper {
-    width: 600px;
+    /* Box-model */
+    width: 100%;
+    padding: 20px;
+  }
+
+  #main-content,
+  #sidebar {
+    width: 100%;
+  }
+
+  #sidebar {
+    margin-top: 40px;
+  }
+}
+
+/* Additional Screen Sizes */
+
+/* Width at 320px and below */
+@media screen and (max-width: 320px) {
+  body {
+    background-color: #333;
+  }
+
+  .wrapper {
+    /* Box-model */
+    width: 100%;
+    padding: 20px;
+  }
+
+  #main-content,
+  #sidebar {
+    width: 100%;
+  }
+
+  #sidebar {
+    margin-top: 40px;
+  }
+}
+
+/* Width at 168px and below */
+@media screen and (max-width: 168px) {
+  body {
+    background-color: #333;
+  }
+
+  .wrapper {
+    /* Box-model */
+    width: 100%;
+    padding: 20px;
+  }
+
+  #main-content,
+  #sidebar {
+    width: 100%;
+  }
+
+  #sidebar {
+    margin-top: 40px;
   }
 }
