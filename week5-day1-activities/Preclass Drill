@@ -1,0 +1,25 @@
+// write a function that takes an array and returns the maximum value
+
+function maxArray1(arr) {
+    return Math.max.apply(null,arr);
+}
+
+function maxarray1andahalf(arr)
+
+function maxArray2(arr) {
+    const newArr = arr.sort();
+    return arr[arr.length-1];
+}
+
+function maxArray3(arr) {
+    let output = arr[0]
+    for (let i = 1; i < arr.length; index++) {
+        if (arr[1] > output) {
+            output = arr[i]
+        }
+    }
+    return output;
+}
+
+console.log("maxArray1", maxArray1(1,2,5,3));
+console.log("maxArray2", maxArray2(1,2,5,3));
